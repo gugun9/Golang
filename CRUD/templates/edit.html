@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+
+<div class="max-w-md mx-auto bg-white p-6 rounded shadow">
+    <h1 class="text-xl font-bold mb-4">Edit Item</h1>
+
+    <form method="POST">
+        <label class="block mb-2">Judul</label>
+        <input name="title" class="w-full border p-2 rounded" value="{{.Title}}" required>
+
+        <button class="mt-4 w-full bg-green-600 text-white px-4 py-2 rounded">
+            Update
+        </button>
+    </form>
+
+    <a href="/" class="block text-center mt-4 text-gray-600">Kembali</a>
+</div>
+
+</body>
+</html>

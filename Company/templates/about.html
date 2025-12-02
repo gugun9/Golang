@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TelecomConnect - About</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+<!-- NAVBAR -->
+<nav class="bg-white shadow">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-3">
+            <img src="Golang/Company/static/unma.png" class="h-10" alt="Logo">
+            <span class="font-bold text-xl">TelecomConnect</span>
+        </div>
+
+        <button id="menu-btn" class="sm:hidden">
+            <svg class="w-8 h-8" fill="none" stroke="black" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <ul id="menu" class="hidden sm:flex space-x-6 font-medium">
+            <li><a href="/" class="hover:text-blue-500">Home</a></li>
+            <li><a href="/about" class="hover:text-blue-500">About</a></li>
+            <li><a href="/contact" class="hover:text-blue-500">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script>
+document.getElementById("menu-btn").onclick = function () {
+    let menu = document.getElementById("menu");
+    menu.classList.toggle("hidden");
+};
+</script>
+
+<section class="max-w-5xl mx-auto py-12 px-6">
+    <h1 class="text-3xl font-bold mb-4">Tentang Kami</h1>
+    <p class="text-lg leading-relaxed">
+        TelecomConnect adalah perusahaan telekomunikasi yang menyediakan layanan internet fiber optic,
+        jaringan bisnis, dan layanan telekomunikasi modern lainnya. Kami berkomitmen menghadirkan
+        konektivitas cepat, stabil, dan aman untuk seluruh pelanggan kami.
+    </p>
+</section>
+
+</body>
+</html>
